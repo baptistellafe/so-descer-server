@@ -1,0 +1,12 @@
+// executar migrations
+
+npm run typeorm -- migration:run -d src/database/dataSource.ts
+
+// executar projeto
+npm run dev
+
+
+// criar migration
+
+npm run typeorm -- migration:create -n CreateBuilding -d src/database/dataSource.ts
+
