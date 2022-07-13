@@ -1,2 +1,2 @@
 # so-descer-server
-:boom: server of Só Descer
+:boom: server of sodescer
