@@ -11,11 +11,14 @@ import { productCategoryRouter } from './Routers/ProductCategoyRouter';
 import { productRouter } from './Routers/ProductRouter';
 import { inventoryRouter } from './Routers/InventoryRouter';
 
+process.env.TZ = 'America/Sao_Paulo';
+console.log(new Date().toString()); 
 
 // import "./database";
 
 const app: Application = express();
 const port: number = 3000;
+
 
 app.use(express.json());
 

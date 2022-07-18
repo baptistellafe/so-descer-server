@@ -5,10 +5,10 @@ export class BaseEntity {
   @PrimaryColumn()
   id: string;
 
-  @CreateDateColumn()
+  @CreateDateColumn({ type: "timestamptz", precision: 6})
   created_at: Date;
 
-  @UpdateDateColumn({ type: "timestamp"})
+  @UpdateDateColumn({ type: "timestamptz", precision: 6})
   updated_at: Date;
 
   constructor() {
